@@ -1,44 +1,70 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TodoApp</title>
-  <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="dark.css" media="(prefers-color-scheme: dark)">
-  <link rel="stylesheet" href="light.css" media="(prefers-color-scheme: light)">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="dark.css" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="light.css" media="(prefers-color-scheme: light)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4c0427cbec.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+  <link rel=" preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  </head>
+
 <body>
-  <nav id="nav">
-    <!-- contenerdor -->
-    <div id="nav-container">
-      <!-- H: titulos -->
-      <h2 id="nav-title">TodoApp</h2>
-      <!-- button -->
-      <button id="nav-btn">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-        </svg>
-      </button>
+        <!-- contenerdor -->
+            <div class="container">
+                <h1 class="titulo">TODO APP</h1>
+                <div class="container_input">
+                    <input type="text" class="input" id="input" placeholder="Crea una tarea...">
+                    <button class="btn_todo" id="btn_todo"><i class="fa-solid fa-plus" style="color: #f4f5f6;"></i>
+                </div>
+                <div class="container_todo">
+                  <div class="container_list">
+                    <div class="container_list-1">
 
-      <div id="nav-links-container">
-        <a class="link" href="/">Home</a>
-        <a class="link" href="/app/">App</a>
-      </div>
-    </div>
-  </nav>
+                      <div class="seccion-tarea"
 
-  <main id="main-container">
-    <h1 id="main-title">
-      Todo<span>App</span>
-    </h1>
-    <div id="main-desc-container">
-      <p id="desc-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis tempora dolorum fugit voluptates, explicabo modi quia, sunt fuga debitis quisquam cumque a quas. Voluptatem tenetur, repudiandae aliquam inventore omnis explicabo.</p>
-      <a id="main-btn" href="app/">Comienza</a>
-    </div>
-  </main>
+                    <ul id="lista">
+                    <li>
+                        <button class="btn-eliminar1"><i class="fa-solid fa-x" style="color: #f7f7f8;"></i></button>
+                        <p class="actividad line-through">Ir a entrenar</p>
+                          <button class="btn-check"><i class="fa-solid fa-check" style="color: #07d51f;"></i></button>
+
+                    </li>
+                    <li>
+                      <button class="btn-eliminar2"><i class="fa-solid fa-x" style="color: #f7f7f8;"></i></button>
+                      <p class="actividad">Dormir</p>
+                        <button class="btn-check2"><i class="fa-solid fa-check" style="color: #07d51f;"></i></button>
+                    </li>
+                    <li>
+                      <button class="btn-eliminar2"><i class="fa-solid fa-x" style="color: #f7f7f8;"></i></button>
+                      <p class="actividad">Almorzar</p>
+                        <button class="btn-check2"><i class="fa-solid fa-check" style="color: #07d51f;"></i></button>
+                    </li>
+                    <li>
+                      <button class="btn-eliminar1"><i class="fa-solid fa-x" style="color: #f7f7f8;"></i></button>
+                      <p class="actividad line-through">Ir al Supermercado</p>
+                        <button class="btn-check"><i class="fa-solid fa-check" style="color: #07d51f;"></i></button>
+                    </li>
+                    <li>
+                      <button class="btn-eliminar2"><i class="fa-solid fa-x" style="color: #f7f7f8;"></i></button>
+                      <p class="actividad">Lavar los platos</p>
+                        <button class="btn-check2"><i class="fa-solid fa-check" style="color: #07d51f;"></i></button>
+                    </li>
+                    </ul>
+                    <div class="buttons-contador">
+                    <button class="Total">Total: 5</button>
+                    <button class="Completos">Completos: 2</button>
+                    <button class="Incompletos">Incompletos: 3</button>
+                </div>
 </body>
+
 </html>
